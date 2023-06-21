@@ -68,8 +68,8 @@ with open(csvpath, encoding="utf8") as csvfile:
         min_change = min(change)
         
         #Finding the corresponding min and max dates
-        max_date = str(dates[change.index(max_change)])
-        min_date = str(dates[change.index(min_change)])
+        max_date = str(dates[change.index(max_change)+1])
+        min_date = str(dates[change.index(min_change)+1])
 
 #Printing to the rest of the analysis 
 print("Average Revenue Change: $", round(avg_change))
